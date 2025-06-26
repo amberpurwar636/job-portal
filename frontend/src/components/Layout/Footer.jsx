@@ -8,7 +8,7 @@ function Footer() {
   const {isAuthorized}  = useContext(Context)
   return (
     <footer className= {isAuthorized ? "footerShow" : "footerHide"}>
-<div>&copy; All Rights Reserved by Abhishek.</div>
+<div>&copy; All Rights Reserved by Amber.</div>
 <div>
   <Link to={'https://github.com/amberpurwar636'} target='github'><FaGithub></FaGithub></Link>
   <Link to={'https://leetcode.com/u/ap-codes/'} target='leetcode'><SiLeetcode></SiLeetcode></Link>
