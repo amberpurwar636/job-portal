@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node  backend/server.js",
+    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend",
+  "start":"node  backend/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "express-fileupload": "^1.4.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.3",
+    "path": "^0.12.7",
     "validator": "^13.11.0"
   },
   "devDependencies": {
